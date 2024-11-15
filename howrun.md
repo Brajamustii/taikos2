@@ -1,4 +1,4 @@
-# Before Run, Make Sure Already Install Requirements & Have Taiko 0.0004 ETH Per Days & Per Wallet
+# Before Run, Make Sure Already Install Requirements, Input PvKey On pvkeylist.txt & Have Taiko 0.0004 ETH Per Days & Per Wallet
 # You Can Send Taiko ETH From Other Wallet Or Bridge With 3rd Party From Other L2 Chain Like Arbitrum, Base, Other
 ```
 You Can Manual Download As Zip File
