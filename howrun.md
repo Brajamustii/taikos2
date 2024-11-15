@@ -10,8 +10,8 @@ cd taikos2
 ```
 ```
 python autotxtaikos2.py
-- Input RPC URL Taiko & PvKey EVM Taiko
+- Input RPC URL Taiko
 OR
 python3 autotxtaikos2.py
-- Input RPC URL Taiko & PvKey EVM Taiko
+- Input RPC URL Taiko
 ```
