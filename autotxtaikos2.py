@@ -19,7 +19,7 @@ vote_contract = web3.eth.contract(address=voteaddr, abi=voteabi)
 
 def vote(wallet, key):
     try:
-        for i in range(0,5):
+        for i in range(0,15):
             nonce = web3.eth.get_transaction_count(wallet)+i
             gasAmount = vote_contract.functions.vote().estimate_gas({
                 'chainId': chainId,
