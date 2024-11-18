@@ -30,16 +30,16 @@ voteabi = json.loads('[{"stateMutability":"payable","type":"fallback"},{"inputs"
 vote_contract = web3.eth.contract(address=voteaddr, abi=voteabi)
 
 def get_next_reset_time():
-    """Get the next scheduled reset time (7:00 AM Jakarta time)."""
+    """Get the next scheduled reset time (7:01 AM Jakarta time)."""
     now = datetime.now(LOCAL_TIMEZONE)
-    next_reset = now.replace(hour=7, minute=0, second=0, microsecond=0)
+    next_reset = now.replace(hour=7, minute=0, second=1, microsecond=0)
     if now >= next_reset:
-        # If it's already past 7:00 AM, set the next reset to 7:00 AM tomorrow
+        # If it's already past 7:00 AM, set the next reset to 7:01 AM tomorrow
         next_reset += timedelta(days=1)
     return next_reset
 
 def reset_tx_count():
-    """Reset the transaction count at the next 7:00 AM Jakarta time."""
+    """Reset the transaction count at the next 7:01 AM Jakarta time."""
     global tx_count_today
     next_reset_time = get_next_reset_time()
 
