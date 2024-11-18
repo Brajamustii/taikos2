@@ -15,7 +15,7 @@ else:
     exit()
 
 # Transaction limits
-MAX_TX_PER_DAY = 75
+MAX_TX_PER_DAY = int(input("Input Max Transaction Limit Per Days : "))
 
 # Store the number of transactions sent today
 tx_count_today = 0
