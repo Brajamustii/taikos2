@@ -11,10 +11,12 @@ cd taikos2
 ```
 ```
 python autotxtaikos2.py [ For TX Only ]
+python autotxtaikos2_v2.py [ For TX Only With Max Limit Transaction Per Days ]
 python autotxvolumetaikos2.py [ For Volume Only ]
 - Input RPC URL Taiko
 OR
 python3 autotxtaikos2.py [ For TX Only ]
-python2 autotxvolumetaikos2.py [ For Volume Only ]
+python3 autotxtaikos2_v2.py [ For TX Only With Max Limit Transaction Per Days ]
+python3 autotxvolumetaikos2.py [ For Volume Only ]
 - Input RPC URL Taiko
 ```
