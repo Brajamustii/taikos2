@@ -25,7 +25,7 @@ LOCAL_TIMEZONE = pytz.timezone("Asia/Jakarta")
 
 print('Auto TX Fast Taiko | @ylasgamers')
 print('')
-voteaddr = web3.to_checksum_address("0x78aa38332f717bfbeb9d402fdb1009e61276e585")
+voteaddr = web3.to_checksum_address("0x4D1E2145082d0AB0fDa4a973dC4887C7295e21aB")
 voteabi = json.loads('[{"stateMutability":"payable","type":"fallback"},{"inputs":[],"name":"vote","outputs":[],"stateMutability":"payable","type":"function"}]')
 vote_contract = web3.eth.contract(address=voteaddr, abi=voteabi)
 
