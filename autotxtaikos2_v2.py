@@ -34,7 +34,7 @@ def get_next_reset_time():
     now = datetime.now(LOCAL_TIMEZONE)
     next_reset = now.replace(hour=7, minute=0, second=1, microsecond=0)
     if now >= next_reset:
-        # If it's already past 7:00 AM, set the next reset to 7:01 AM tomorrow
+        # If it's already past 7:01 AM, set the next reset to 7:01 AM tomorrow
         next_reset += timedelta(days=1)
     return next_reset
 
